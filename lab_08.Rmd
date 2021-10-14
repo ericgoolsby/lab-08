@@ -47,7 +47,7 @@ So far in this course, you've learned how to manipulate data frames using logica
 
 ```
 
-4. Look at slides 1 through 5 on this flipbook example: <https://evamaerey.github.io/data_manipulation/one_stream_wrangle.html>.
+4. Look at slides 1 through 5 (the slide number is indicated at the end of the URL) on this flipbook example: <https://evamaerey.github.io/data_manipulation/one_stream_wrangle.html>.
       -   On slide 5, notice how they used `%>%` -- that's just the tidyverse way of passing data into a function.
             -   The `%>%` operator is called a *pipe*, and when you use the pipe operator, it's called *piping*. 
       -   Use the `filter` function to extract the rows of `iris` where the `Species` is `versicolor`. Store it in an object named `dat2`.
