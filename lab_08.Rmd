@@ -49,7 +49,7 @@ So far in this course, you've learned how to manipulate data frames using logica
 
 4. Look at slides 1 through 5 on this flipbook example: <https://evamaerey.github.io/data_manipulation/one_stream_wrangle.html>.
       -   On slide 5, notice how they used `%>%` -- that's just the tidyverse way of passing data into a function.
-            -   The `%>%` operator is called a *pipe*, and when you use the pipe operator, it's called *piping*.the `filter` function. 
+            -   The `%>%` operator is called a *pipe*, and when you use the pipe operator, it's called *piping*. 
       -   Use the `filter` function to extract the rows of `iris` where the `Species` is `versicolor`. Store it in an object named `dat2`.
             -   Hint: your code should look like this: `dat2 <- iris %>% filter()`. You just have to figure out what to put inside the `filter` function.
       -   On the next line, use tidyverse to print the first few rows of `dat2`.
@@ -119,7 +119,7 @@ So far in this course, you've learned how to manipulate data frames using logica
       -   You can use the `rev` function to reverse a vector. So `rev(sort(dat$Sepal.Length))` would give you these values from highest to lowest.
       -   We can use the `order` function to return the vector positions corresponding to the ordering obtained by sort.
             -   For example, `dat$Sepal.Length[order(dat$Sepal.Length)]` is equivalent to `sort(dat$Sepal.Length)`.
-            -   That's not very useful, but it is IS useful in reordering the rows of a data frame -- e.g. `dat[order(x),]`
+            -   That's not very useful, but it IS useful in reordering the rows of a data frame -- e.g. `dat[order(x),]`
       -   Use the `order` function to reorder the rows of dat based on `Sepal.Length`, **from highest to lowest**. Store the results in `dat` and print the first few rows using base R.
             -   Hint: for highest to lowest ordering, you can use the `rev` function, or you can put a minus sign in front of `dat$Sepal.Length`. Either one will work.
 
@@ -162,13 +162,13 @@ So far in this course, you've learned how to manipulate data frames using logica
 
 ```
 
-18. Now for some ggplot2 practice! Using the `iris` dataset and `ggplot2`, make a scatterplot of `Sepal.Length` vs `Sepal.Width`. Color-code the points by `Species`, and make the size of the points propotional to `Petal.Width`.
+18. Now for some ggplot2 practice! Using the `iris` dataset and `ggplot2`, make a scatterplot of `Sepal.Length` vs `Sepal.Width`. Color-code the points by `Species`, and make the size of the points proportional to `Petal.Width`.
 
 ```{r}
 
 ```
 
-19. Make the same plot as you did in 17, but this time:
+19. Make the same plot as you did in 18, but this time:
       -   Don't scale size by `Petal.Width`
       -   Use a different them (anything but `theme_grey()`)
       -   Add a line (one for each species) -- within the function that plots the line, include the arguments `method = "lm"` and `se = FALSE`
